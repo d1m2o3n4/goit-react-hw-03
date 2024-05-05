@@ -9,7 +9,7 @@ function App() {
   const getStoredContacts = () => {
     const storedContacts = localStorage.getItem("contacts");
     console.dir(storedContacts);
-    return storedContacts.length > 2
+    return storedContacts
       ? JSON.parse(storedContacts)
       : [
           { id: "id-1", name: "Rosie Simpson", number: "459-12-56" },
